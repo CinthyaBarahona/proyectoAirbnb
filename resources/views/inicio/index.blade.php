@@ -1,74 +1,122 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ asset('css/inicio.css') }}">
-	<title>Airbnb</title>
-</head>
-<body>
-    <div id="primera-seccion">
-   
-    <div align="center">
-    	<input type="search" name="" class="buscar" size="45"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <title>Menu Principal</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+      </div>
+    </nav>
 
-    <center><label class="letras">¿Qué estás buscando?</label></center>
-    <div align="center">
-    	<img src="{{ asset('images/h.png') }}" width="150"  class="im1">
-    	
-    	<img src="{{ asset('images/cabania.png') }}"  width="160" class="im2">
-    	
-    	<img src="{{ asset('images/casa.png') }}"   width="155"class="im3">
-    	
+    <div class="busqueda">
+        <div align="center">
+            <input type="search" placeholder="Buscar un lugar..." name="busquedaInicio">
+            <br>
+            <label>¿Qué estás buscando?</label>
+        </div>
+        <div class="icons-busqueda">
+            <a href="#">
+                <span>
+                    <i class="fa-solid fa-house"></i>
+                    <label class="label-icon-busqueda">Casas</label>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <i class="fa-solid fa-hotel"></i>
+                    <label class="label-icon-busqueda">Hoteles</label>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <i class="fa-solid fa-campground"></i>
+                    <label class="label-icon-busqueda">Cabañas</label>
+                </span>
+            </a>
+        </div>
     </div>
 
-    	
-    </div>
+    <div class="content-inicio">
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column justify-content-between ml-2">
+            <img src="{{ asset('images/lugar.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">LUGAR 1</h5>
+               <a href="#" class="btn btn-primary btn-block">Ver Lugar</a>
+            </div>
+        </div>
         
-    <div id="segunda-seccion">
-       
-    <div class="conte">
+    </div>
 
-      <div class="card">
-
-       <a href=""><img src="{{ asset('images/lugar.jpg') }}"></a>
-         <h2>LUGAR 1</h2>
-         
-      </div>
-    
-
-     
-      <div class="card">
-         <a href=""><img src="{{ asset('images/lugar.jpg') }}"></a>
-         <h2>LUGAR 2</h2>
-         
-      </div>
-    
-
-      <div class="card">
-        <a href=""> <img src="{{ asset('images/lugar.jpg') }}"></a>
-         <h2>LUGAR 3</h2>
-         
-      </div>
-
-      <div class="card">
-         <a href=""><img src="{{ asset('images/lugar.jpg') }}"></a>
-         <h2>LUGAR 4</h2>
-         
-      </div>
-  </div>
-</div>
-
-<footer id="footer-inicio">
-<div>
-         <div class="container-footer">
-            <a href="">Sobre nosotros</a>
-            <a href="">Contactanos</a>
-            <a href="">Otra Opcion</a>
+    <footer class="footer-inicio">
+        <div class="col-sm-4 d-flex flex-column align-items-right">
+           <a href="#">Nosotros</a>
+           <a href="#">Terminos y Condiciones</a>
+           <a href="#">Contacto</a>
         </div>
         <hr>
-</div>
-</footer>
+        <!---<a href="https://www.flaticon.es/iconos-gratis/cabina" title="cabina iconos">Cabina iconos creados por Freepik - Flaticon</a>--->
+     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
